@@ -1,45 +1,55 @@
-# Proyek Analisis Data: E-Commerce Public Dataset ✨
+# Brazilian E-Commerce Data Analysis Dashboard
 
-## Setup Environment - Anaconda
-```
-conda create --name main-ds python=3.9
-conda activate main-ds
-pip install -r requirements.txt
-```
+This project analyzes the Brazilian E-Commerce Public Dataset by Olist to explore sales, products, and customer behavior.
 
-## Setup Environment - Shell/Terminal
-```
-mkdir proyek_analisis_data
-cd proyek_analisis_data
-pipenv install
-pipenv shell
-pip install -r requirements.txt
-```
+## Dashboard
 
-## Struktur Direktori
-```
-submission
-├───dashboard
-│   ├───main_data.csv
-│   └───dashboard.py
-├───data
-│   └───(seluruh file dataset .csv)
-├───notebook.ipynb
-├───README.md
-├───requirements.txt
-└───url.txt
-```
+The interactive dashboard is available here:
 
-## Run Notebook
-Notebook `notebook.ipynb` sudah dijalankan (executed) dan bisa dibuka langsung dengan Jupyter/Google Colab.
-```
-jupyter notebook notebook.ipynb
-```
-Notebook ini juga menyimpan `dashboard/main_data.csv`, yaitu data hasil wrangling yang dipakai oleh dashboard.
+**[View the Dashboard](https://brazilian-e-commerce-data-analysis-dashboard-dmppgafx2fkpab3bb.streamlit.app/)**
 
-## Run Streamlit App
-```
-cd dashboard
-streamlit run dashboard.py
-```
-Dashboard akan terbuka otomatis di browser pada `http://localhost:8501`.
+## About the Project
+
+This project focuses on several aspects of e-commerce data, including:
+
+- Sales and order trends
+- Product category performance
+- Customer behavior
+- Customer segmentation using RFM Analysis
+
+The analysis is presented through an interactive Streamlit dashboard, allowing users to explore the results through different visualizations and filters.
+
+## Customer Segmentation
+
+RFM Analysis is used to group customers based on their purchasing behavior:
+
+- **Recency** — how recently a customer made a purchase
+- **Frequency** — how often a customer made a purchase
+- **Monetary** — how much a customer spent
+
+This analysis helps identify different customer groups based on their transaction history.
+
+## Tools
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Streamlit
+- Jupyter Notebook
+
+## Dataset
+
+The project uses the **Brazilian E-Commerce Public Dataset by Olist**. The dataset contains information about orders, customers, products, payments, reviews, and other e-commerce transactions in Brazil.
+
+## Project Files
+
+- `notebook.ipynb` — data analysis and exploration
+- `dashboard.py` — Streamlit dashboard
+- `main_data.csv` — processed dataset
+- `requirements.txt` — Python dependencies
+
+---
+
+**Created by Antung Fatimah**
